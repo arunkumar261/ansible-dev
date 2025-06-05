@@ -1,0 +1,11 @@
+- name: Variables calling
+  hosts: web
+  vars:
+    Name: "Arun"
+    Course: "Devops"
+    Duration: "110Hrs"
+
+  tasks:
+  - name: Declaring Variables
+    ansible.builtin.debug:
+      msg: "Hello this is {{Name}} learing {{Course}} and duration is {{Duration}}"
