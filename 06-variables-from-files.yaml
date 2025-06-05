@@ -1,7 +1,7 @@
 - name: Variables from different file
   hosts: web
   vars_files:
-    variables.yaml
+  - variables.yaml
   tasks:
   - name: Variables getting from different file
     ansible.builtin.debug:
