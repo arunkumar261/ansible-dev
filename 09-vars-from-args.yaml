@@ -1,0 +1,6 @@
+- name: Variables from arguments
+  hosts: web
+  tasks:
+  - name: Getting from arguments
+    ansible.builtin.debug:
+      msg: "Hi I'm {{NAME}} learing {{COURSE}}"
