@@ -1,11 +1,14 @@
-- name: Variables calling from play level
+- name: Local variables over global variables task level
   hosts: web
   vars:
     Name: "Arun"
     Course: "Devops"
     Duration: "110Hrs"
-
   tasks:
-  - name: Declaring Variables
+  - name: task level variables getting
+    vars:
+      Name: "Kumar"
+      Course: "AI"
+      Duration: "150Hrs"
     ansible.builtin.debug:
       msg: "Hello this is {{Name}} learing {{Course}} and duration is {{Duration}}"
