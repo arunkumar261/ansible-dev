@@ -1,8 +1,7 @@
 [web]
-variables
 54.227.136.248
 
-[variables:vars]
+[web:vars]
 Name= "Arun"
 Course= "Devops"
 Duration= "110Hrs"
