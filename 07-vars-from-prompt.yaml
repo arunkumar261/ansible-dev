@@ -2,16 +2,16 @@
   hosts: web
   vars_prompt:
   - name : Name 
-    prompt: "Please Enter Your Name : "
+    prompt: "Please Enter Your Name "
     private: false
   - name : Course
-    prompt: "please Enter your Course : "
+    prompt: "please Enter your Course "
     private: false
   - name: Duration
-    prompt: "please Enter Duration of course : "
+    prompt: "please Enter Duration of course "
     private: false
   - name : ID
-    prompt: "Your ID is : "
+    prompt: "Your ID is "
     private: true
   tasks:
   - name: Getting vars from prompt
