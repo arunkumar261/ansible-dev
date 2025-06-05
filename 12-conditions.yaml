@@ -8,4 +8,13 @@
   
   - name: print output value
     ansible.builtin.debug:
-      msg: "Vallue is {{output}}"
+      msg: "output value is: {{output}}"
+
+  - name: status is 
+    ansible.builtin.debug:
+      msg: "status is : {{output.rc}}"
+  
+  - name: Create user
+    ansible.builtin.user:
+      name: roboshop
+    when: output.rc ! = 0
