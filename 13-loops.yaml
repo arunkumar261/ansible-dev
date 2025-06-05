@@ -1,10 +1,13 @@
 - name: Loops in ansible
   hosts: web
+  become: yes
   tasks:
   - name: Loop 
-    ansible.builtin.debug:
-      msg: "HI {{item}}"
+    ansible.builtin.package:
+      name: "{{item}}"
+      state: present
     loop:
-    - Arun
-    - Kumar
-    - Reddy
+    - git
+    - nginx
+    - ansible
+    - postfix
