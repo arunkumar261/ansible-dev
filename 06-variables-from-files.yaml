@@ -1,6 +1,6 @@
 - name: Variables from different file
   hosts: web
-  variables:
+  vars_files:
     variables.yaml
   tasks:
   - name: Variables getting from different file
