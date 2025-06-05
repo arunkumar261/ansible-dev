@@ -13,7 +13,7 @@
       Jva: 1
       Linux: 7
     SoftwareEngineer: true
-    tasks:
-    - name: Data types printing
-      ansible.builtin.debug:
-        msg: "Hello My name is {{NAME}},I Have 14 years of Experience in {{Experience}} my skills are {{skills}}. Aru you a Software Engineer ? : {{SoftwareEngineer}}"
+  tasks:
+  - name: Data types printing
+    ansible.builtin.debug:
+      msg: "Hello My name is {{NAME}},I Have 14 years of Experience in {{Experience}} my skills are {{skills}}. Aru you a Software Engineer ? : {{SoftwareEngineer}}"
