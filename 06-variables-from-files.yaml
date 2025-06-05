@@ -1,0 +1,8 @@
+- name: Variables from different file
+  hosts:
+  variables:
+    variables.yaml
+  tasks:
+  - name: Variables getting from different file
+    ansible.builtin.debug:
+      msg: "Hello this is {{Name}} learing {{Course}} and duration is {{Duration}}"
