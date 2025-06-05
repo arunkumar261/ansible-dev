@@ -2,9 +2,9 @@
   hosts: web
   tasks:
   - name: Loop 
-  ansible.builtin.debug:
-    msg: "HI {{item}}"
-  loop:
-  - Arun
-  - Kumar
-  - Reddy
+    ansible.builtin.debug:
+      msg: "HI {{item}}"
+    loop:
+    - Arun
+    - Kumar
+    - Reddy
