@@ -1,0 +1,14 @@
+- name: Installing packages using advanced loops
+  hosts: web
+  become: yes
+  tasks:
+  - name: Install or uninstall packages 
+    ansible.builtin.package:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop:
+    - {name: "git", state: "absent"}
+    - {name: "nginx", state: "absent"}
+    - {name: "ansible", state: "present"}
+    - {name: "postfix", state: "absent"}
+    - {name: "mysql", state: "present"}
