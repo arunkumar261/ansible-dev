@@ -16,5 +16,4 @@
     tasks:
     - name: Data types printing
       ansible.builtin.debug:
-        msg1: "Hello My name is {{NAME}},I Have 14 years of Experience in {{Experience}} my skills are {{skills}}"
-        msg2:  "Aru you a Software Engineer : {{SoftwareEngineer}}"
+        msg1: "Hello My name is {{NAME}},I Have 14 years of Experience in {{Experience}} my skills are {{skills}}. Aru you a Software Engineer ? : {{SoftwareEngineer}}"
