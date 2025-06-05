@@ -1,0 +1,19 @@
+- name: Variables from prompt
+  hosts: web
+  vars_prompt:
+  - name : Name 
+    prompt: "Please Enter Your Name : "
+    private: false
+  - name : Course
+    prompt: "please Enter your Course : "
+    private: false
+  - name: Duration
+    prompt: "please Enter Duration of course : "
+    private: false
+  - name : ID
+    prompt: "Your ID is : "
+    private: true
+  tasks:
+  - name: Getting vars from prompt
+    ansible.builtin.debug:
+      msg: "Hello my name is {{Name}}, I'm learing {{Course}} and Duration is {{Duration}} and my ID is {{ID}}"
