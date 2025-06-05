@@ -2,7 +2,7 @@
   hosts: web
   tasks:
   - name: Loop 
-    ansible.builtin.package:
+    ansible.builtin.debug:
       msg: "HI {{item}}"
     loop:
     - ARUN
