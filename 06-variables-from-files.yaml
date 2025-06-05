@@ -1,5 +1,5 @@
 - name: Variables from different file
-  hosts:
+  hosts: web
   variables:
     variables.yaml
   tasks:
